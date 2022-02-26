@@ -1,2 +1,2 @@
 # KimSoyoungPortfolio
-Professiona portfolio for a korean/english translator
+Professional portfolio for a korean/english translator
