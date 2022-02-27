@@ -105,16 +105,20 @@ body {
     font-size: 80px;
     z-index: 2;
     animation-name: name-enter;
-    animation-duration: 1s;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
 
 }
 
 @keyframes name-enter {
     from {
         transform: translateX(-100%);
+        opacity: 0%;
     }
     to {
         transform:translateX(0);
+        opacity: 100%;
+        
     }
   }
 
@@ -130,15 +134,18 @@ body {
     color: #1d284f;
     z-index: 1;
     animation-name: korean-enter;
-    animation-duration: 1s;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
 }
 
 @keyframes korean-enter {
     from {
         transform: translateX(100%);
+        opacity: 0%;
     }
     to {
         transform:translateX(0);
+        opacity: 50%;
     }
   }
 
@@ -246,9 +253,89 @@ a{
     align-items: center;
     justify-content: center;
     max-width: 280px;
+
   
 }
 
+.project-cover{
+    width: 260px;
+    height: 350px;
+    object-fit: cover;
+    transition: 1.5s;
+    transform: translateY(100%);
+    opacity: 0%;
+    z-index: 2;
+
+}
+
+.project-cover.show {
+    transform: translateY(0);
+    opacity:100%;
+}
+
+.project-titles{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    transform: rotate(270deg);
+    left: 113px;
+    font-size: 10px;
+    height: 10px;
+    width: 320px;
+    opacity: 100%;
+    z-index: 1;
+
+}
+
+
+/*
+@keyframes project-animations{
+    from{
+        transform: translateY(100%);
+        opacity: 0%;
+    }
+
+    to{
+        transform: translateY(0);
+        opacity:100%;
+    }
+
+}
+*/
+
+.project-cover:hover{
+    opacity: 30%;
+}
+
+
+
+#rdr {
+    animation-delay: 0.5s;
+}
+
+#control {
+    animation-delay: 0.7s;
+}
+
+#beat {
+    animation-delay: 0.9s;
+}
+
+#spelunky {
+    animation-delay: 1s;
+}
+
+#campfire {
+    animation-delay: 1.2s;
+}
+
+#crossfire {
+    animation-delay: 1.4s;
+}
+
+#olliolli {
+    animation-delay: 1.6s;
+}
 #projects-page{
     display: flex;
     flex-direction: column;
@@ -259,35 +346,33 @@ a{
 
 #projects-first-row{
     display: flex;
+    flex-wrap: wrap;;
   
 }
 
 #projects-second-row{
     display: flex;
+    flex-wrap: wrap;
     margin-top: 40px;
 }
 
-.project-titles{
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    transform: rotate(270deg);
-    font-size: 10px;
-    height: 10px;
-    width: 320px;;
-    left: 113px;
+
+
+/*
+@keyframes project-titles-animation {
+    from{
+        opacity: 0%;
+    }
+    to{
+        opacity: 100%;
+    }
 }
 
-.project-cover{
-    width: 260px;
-    height: 350px;
-    object-fit: cover;
-    transition: 500ms;
-}
+*/
 
-.project-cover:hover{
-    opacity: 30%;
-}
+
+
+
 
 #contact-page{
     justify-content: center;
