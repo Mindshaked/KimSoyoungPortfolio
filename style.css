@@ -262,7 +262,7 @@ a{
     width: 30px;
     position: absolute;
     transform: rotate(270deg);
-    right: 6vw;
+    left: 6vw;
     bottom: 4vw;
 }
 
@@ -272,7 +272,7 @@ a{
 
 #home-vertical {
     position: absolute;
-    right: 8.5vw;
+    left: 8.5vw;
     bottom: 4.4vw;
     font-size: 14px;
 }
