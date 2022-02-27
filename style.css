@@ -30,15 +30,24 @@ body {
 
 #projects-vertical {
     position: absolute;
-    left: 6%;
+    right: 4%;
     top: 50%;
     transform: rotate(270deg);
+    font-size: 24px;
+    color: #1d284f;
 }
 
 #projects-vertical2 {
     position: absolute;
     top: 83vh;
     left: 5vw;
+    transform: rotate(270deg);
+}
+
+#contact-vertical2 {
+    position: absolute;
+    top: 83vh;
+    left: 5.2vw;
     transform: rotate(270deg);
 }
 
@@ -94,6 +103,7 @@ body {
 #projects-page{
     display: flex;
     flex-direction: column;
+    position: relative;
     width: 100vw;
     height: 100vh;
 }
@@ -215,6 +225,7 @@ a{
     flex-direction: column;
     width: 100vw;
     height: 100vh;
+    position:relative;
 }
 
 #brand-logo {
@@ -233,16 +244,37 @@ a{
     opacity: 40%;
 }
 
+#contact-arrow {
+    width: 30px;
+    position: absolute;
+    transform: rotate(90deg);
+    top: 90vh;
+    left: 6vw;
+}
+
+#contact-arrow:hover {
+    opacity: 40%;
+}
+
+
+
 #home-arrow {
     width: 30px;
     position: absolute;
     transform: rotate(270deg);
-    left: 6vw;
-    top: 4vw;
+    right: 6vw;
+    bottom: 4vw;
 }
 
 #home-arrow:hover {
     opacity: 40%;
+}
+
+#home-vertical {
+    position: absolute;
+    right: 8.5vw;
+    bottom: 4.4vw;
+    font-size: 14px;
 }
 
 .projects {
@@ -389,6 +421,7 @@ a{
     font-weight: bold;
     font-size: 30px;
     margin-bottom: 15px;
+    color: #1d284f;
 }
 
 #contact-email{
