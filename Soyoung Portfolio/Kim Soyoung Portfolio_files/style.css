@@ -2,31 +2,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
-html, body {
-    max-width: 100%;
-}
 
-html{
-    scroll-behavior:smooth;
-
-}
+html{scroll-behavior:smooth}
 
 body {
     background-color: #CDCDCD;
     font-family: "Montserrat";
     color: black;
-   
+    position:relative;
 }
 
 #first-page {
     display: flex;
     flex-direction: column;
-    
 }
 
 .vl {
     border-left: 3px solid rgb(68, 68, 68);
-    opacity: 0%;
+    opacity: 40%;
     margin-top: 50vh;
     height: 200vh;
     position: absolute;
@@ -44,49 +37,34 @@ body {
     right: 0.1vw;
     top: 50%;
     transform: rotate(270deg);
-    font-size: 1rem;
+    font-size: 2em;
     color: #1d284f;
 }
 
-
-
-#projects-pack {
-    display: flex;
-    position: absolute;
-    bottom: 5vh;
-    left: 4vw;
-    width: 60px;
-    height: 100px;
-    flex-direction: column;
-    align-items: center;
-    
-}
-
-#down-arrow {
-    width: 30px;
-    transform: rotate(90deg);
-
-}
-
 #projects-vertical2 {
-    font-size: 1em;
-    margin-bottom: 40px;
+    position: absolute;
+    top: 83vh;
+    left: 5vw;
     transform: rotate(270deg);
 }
 
+#contact-vertical2 {
+    position: absolute;
+    top: 83vh;
+    left: 5.2vw;
+    transform: rotate(270deg);
+}
 
 #header {
     display: flex;
     justify-content:space-between;
     width: 100vw;
-    height: auto;
+    height: 7vh;
     position: sticky;
     top: 0;
     align-items: center;
     background-color: #CDCDCD;
     z-index: 5;
-    flex-wrap: wrap;
-
 }
 
 #nav-bar {
@@ -94,7 +72,7 @@ body {
     align-self: center;
     width: auto;
     font-size: 1em;
-    flex-wrap: wrap;
+    display: inline-block;
    
     
 
@@ -196,14 +174,13 @@ body {
 
 #position{
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 1.3vw;
     margin-left: 2px;
-    max-width: 20vw;
 }
 
 #linkedin-top-logo{
     width: 30px;
-    margin-right: 3vw;
+    margin-right: 15px;
     opacity: 60%;
 }
 
@@ -269,33 +246,24 @@ a{
     font-size: 1em;
 }
 
-
+#down-arrow {
+    width: 30px;
+    position: absolute;
+    transform: rotate(90deg);
+    top: 90vh;
+    left: 6vw;
+}
 
 #down-arrow:hover {
     opacity: 40%;
 }
 
-
-#contact-pack {
-    position: absolute;
-    width: 60px;
-    height: 100px;
-    bottom: 4vw; 
-    left: 4vw;
-    flex-direction: column;
-    align-items: center;
-    display: flex;
-}
-#contact-vertical2 {
-    transform: rotate(270deg);
-}
-
-
 #contact-arrow {
-    margin-top: 35px;
-
     width: 30px;
+    position: absolute;
     transform: rotate(90deg);
+    top: 90vh;
+    left: 6vw;
 }
 
 #contact-arrow:hover {
@@ -303,25 +271,13 @@ a{
 }
 
 
-#backhome-pack {
-   
-    position: absolute;
-    left: 5vw;
-    bottom: 4vw;
-    width: 50vw;
-    height: 15vh;
-    display: flex;
-    align-items: center;
-  
-}
 
 #home-arrow {
     width: 30px;
+    position: absolute;
     transform: rotate(270deg);
-    margin-right: 10px;
-  
-   
- 
+    left: 6vw;
+    bottom: 4vw;
 }
 
 #home-arrow:hover {
@@ -329,8 +285,10 @@ a{
 }
 
 #home-vertical {
-    font-size: 1em;
-   
+    position: absolute;
+    left: 8.5vw;
+    bottom: 8.1vh;
+    font-size: 1rem;
 }
 
 .projects {
@@ -352,8 +310,8 @@ a{
 }
 
 .project-cover{
-    width: 220px;
-    height: 330px;
+    width: 260px;
+    height: 350px;
     object-fit: cover;
     transition: 1.5s;
     transform: translateY(100%);
@@ -374,7 +332,7 @@ a{
     justify-content: center;
     position: absolute;
     transform: rotate(270deg);
-    left: 77px;
+    left: 113px;
     font-size: 0.7em;
     height: 10px;
     width: 320px;
