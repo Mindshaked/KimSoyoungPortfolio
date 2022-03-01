@@ -21,3 +21,10 @@ const observer = new IntersectionObserver(
         });
 
     
+const gtaCover = document.getElementById("gta");
+const projectInfo = document.getElementById("gta-info")
+
+
+gtaCover.addEventListener("mouseover", (e) => {
+    projectInfo.style.opacity = "50%";
+});

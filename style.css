@@ -95,6 +95,7 @@ body {
     width: auto;
     font-size: 1em;
     flex-wrap: wrap;
+
    
     
 
@@ -219,7 +220,7 @@ a{
 #contact-button{
     font-family: "Montserrat";
     font-weight: 500;
-    font-size: 14px;
+    font-size: 0.8rem;
     background-color: #1d284f;
     color: white;
     width: 110px;
@@ -344,29 +345,50 @@ a{
     flex-wrap: wrap;;
     max-width: 100%;
     margin-top: 20px;
-
-    
   
+}
 
-  
+.projects:hover .project-info{
+    opacity:100%
 }
 
 .project-cover{
     width: 220px;
     height: 330px;
     object-fit: cover;
-    transition: 1.5s;
+    transition: 1s;
     transform: translateY(100%);
     opacity: 0%;
     z-index: 2;
     max-width: 100%;
-
 
 }
 
 .project-cover.show {
     transform: translateY(0);
     opacity:100%;
+}
+
+.project-cover:hover{
+    opacity: 10%;
+
+}
+
+.project-info {
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    height: 330px;
+    width: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+    font-weight: bold;
+}
+
+.project-info:hover {
+    opacity: 100%;
 }
 
 .project-titles{
@@ -399,9 +421,7 @@ a{
 }
 */
 
-.project-cover:hover{
-    opacity: 30%;
-}
+
 
 
 #projects-page{
