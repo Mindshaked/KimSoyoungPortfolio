@@ -150,7 +150,7 @@ body {
 
 #name{
     font-weight: bold;
-    font-size: 5vw;
+    font-size: 4rem;
     z-index: 2;
     animation-name: name-enter;
     animation-duration: 1.5s;
@@ -199,10 +199,16 @@ body {
 
 #position{
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 1.4rem;
     margin-left: 2px;
     
 }
+
+#position-subtitle {
+    margin-left: 2px;
+    margin-top: 10px;
+}
+
 
 #linkedin-top-logo{
     width: 30px;
@@ -548,3 +554,8 @@ a{
     }
 } 
 
+@media screen and (max-width: 1550px) {
+    #name-korean{
+        display: none;
+    }
+}
